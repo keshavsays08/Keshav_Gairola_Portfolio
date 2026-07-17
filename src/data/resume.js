@@ -8,7 +8,7 @@ export const personal = {
   email: "keshavsays08@gmail.com",
   phone: "+91 8755553908",
   location: "Rishikesh, Dehradun, Uttarakhand, India",
-  cvPath: "/Keshav_Gairola_RESUME.pdf", // put your CV in /public/
+  cvPath: "/Keshav_Gairola_Resume.pdf", // put your CV in /public/
   profileImage: "/profile.jpg",          // put your photo in /public/
   typingRoles: [
     "Machine Learning",
@@ -27,18 +27,18 @@ export const personal = {
 
 export const education = [
   {
-    degree: "B.S. in Data Science and Applications",
-    institution: "Indian Institute of Technology, Madras",
-    year: "2023 – 2027",
-    score: "6.85 CGPA",
-    image: "/edu/iitm.jpg",   // add image to /public/edu/
-  },
-  {
     degree: "B.Tech in Electrical Engineering",
     institution: "G. B. Pant University Of Agriculture & Technology, Pantnagar",
     year: "2022 – 2026",
-    score: "6.667 CGPA",
+    score: "6.860 CGPA",
     image: "/edu/gbpuat.jpg",
+  },
+  {
+    degree: "Foundation Level Certificate in Data Science and Applications",
+    institution: "Indian Institute of Technology, Madras",
+    year: "2023 – 2025",
+    score: "6.85 CGPA",
+    image: "/edu/iitm.jpg",   // add image to /public/edu/
   },
   {
     degree: "Grade XII, CBSE",
@@ -47,13 +47,20 @@ export const education = [
     score: "86.4%",
     image: "/edu/school.jpg",
   },
+  {
+    degree: "Grade X, CBSE",
+    institution: "Nirmal Ashram Deepmala Public School, Rishikesh",
+    year: "2019",
+    score: "88.8%",
+    image: "/edu/school.jpg",
+  },
 ];
 
 export const experience = [
   {
     role: "Product Analyst Intern",
     company: "Interviewkit.ai",
-    period: "Apr 2026 – Present",
+    period: "Apr 2026 – Jun 2026",
     bullets: [
       "Collaborated directly with the founder on Product Development, Sales Operations, and Strategy; took end-to-end ownership of key product features from ideation to deployment.",
       "Designed and implemented a REST API-based editor and built a job description suggestion module leveraging keyword extraction to match user profiles with relevant roles.",
@@ -79,7 +86,7 @@ export const projects = [
     summary:
       "End-to-end computer vision pipeline using YOLOv8 trained on 520 annotated images, deployed on Raspberry Pi 4 for real-time fruit fly detection at 5–10 FPS with automated CSV logging.",
     tags: ["YOLOv8", "PyTorch", "Raspberry Pi", "Computer Vision"],
-    github: "https://github.com/keshavgairola/insect-detection",
+    github: "https://github.com/keshavsays08/Automated-Insect-Detection-Counting-System-Fruit-Fly-Insect",
   },
   {
     title: "Real Estate Analytics",
@@ -87,7 +94,7 @@ export const projects = [
     summary:
       "End-to-end ML pipeline benchmarking 10+ algorithms, Random Forest achieving 0.91 R² via K-Fold CV. Multi-page Streamlit dashboard with Price Prediction, Analytics, Insights, and Recommender modules. Deployed on AWS EC2 + S3.",
     tags: ["Random Forest", "Streamlit", "AWS", "Scikit-learn"],
-    github: "https://github.com/keshavgairola/real-estate-analytics",
+    github: "https://github.com/keshavsays08/Real-Estate-Web-Analytics-Project-Public",
   },
   {
     title: "Financial Transaction Analytics",
@@ -95,15 +102,14 @@ export const projects = [
     summary:
       "Star Schema data model with a central Transaction fact table and 7 dimension tables. End-to-end analytics workflow using SQL/Snowflake for data warehousing and Power BI for KPI dashboards with dynamic cross-filtering.",
     tags: ["SQL", "Snowflake", "Power BI", "Data Warehousing"],
-    github: "https://github.com/keshavgairola/financial-analytics",
+    github: "https://github.com/keshavsays08/Financial-Transaction-Analytics-System-Power-BI",
   },
 ];
 
 export const skills = [
-  "Python", "Java", "SQL", "Machine Learning",
-  "Power BI", "Microsoft Excel", "ETL Pipelines",
-  "YOLOv8 / PyTorch", "Streamlit", "AWS (EC2 / S3)",
-  "Snowflake", "Scikit-learn", "Pandas / NumPy",
+  "Python", "Microsoft Excel","Java", "SQL", "Machine Learning",
+  "Power BI", "Looker Studio", "YOLOv8 / PyTorch", "Streamlit", "AWS",
+  "Snowflake", "Scikit-learn", "Pandas / NumPy", "Statsmodel", "Plotly / Matplotlib / Seaborn"
 ];
 
 export const achievements = [
