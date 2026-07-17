@@ -60,7 +60,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="font-mono text-[10px] text-[#555] uppercase tracking-widest">LinkedIn</p>
-                    <p className="text-[#e8e0d4] text-base mt-0.5">linkedin.com/in/keshav-gairola-051196234</p>
+                    <p className="text-[#e8e0d4] text-base mt-0.5">linkedin.com/in/keshav-gairola</p>
                   </div>
                 </a>
               )}

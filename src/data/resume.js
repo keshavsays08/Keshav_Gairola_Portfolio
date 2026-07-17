@@ -18,7 +18,7 @@ export const personal = {
     "Statistics",
   ],
   socials: {
-    linkedin: "https://www.linkedin.com/in/keshav-gairola-051196234/",
+    linkedin: "https://www.linkedin.com/in/keshav-gairola/",
     github: "https://github.com/keshavsays08",
     twitter: "",
     medium: "",
