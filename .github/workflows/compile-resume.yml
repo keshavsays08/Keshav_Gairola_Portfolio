@@ -4,25 +4,31 @@ on:
   push:
     paths:
       - 'resume/**.tex'
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
-      - name: Compile LaTeX
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX to PDF
         uses: xu-cheng/latex-action@v3
         with:
           root_file: resume/Keshav_Gairola_Resume.tex
+          working_directory: resume
+          latexmk_use_xelatex: true
 
-      - name: Move PDF to public folder
-        run: mv Keshav_Gairola_Resume.pdf public/Keshav_Gairola_Resume.pdf
+      - name: Copy PDF to public folder
+        run: cp resume/Keshav_Gairola_Resume.pdf public/Keshav_Gairola_Resume.pdf
 
-      - name: Commit PDF
+      - name: Commit and push PDF
         run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
           git add public/Keshav_Gairola_Resume.pdf
-          git commit -m "auto: update resume PDF" || echo "No changes"
+          git diff --staged --quiet || git commit -m "auto: recompile resume PDF"
           git push
