@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Compile LaTeX to PDF
         uses: xu-cheng/latex-action@v3
@@ -28,7 +30,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main
+          git fetch origin main
+          git reset --soft origin/main
           git add public/Keshav_Gairola_Resume.pdf
-          git diff --staged --quiet || git commit -m "auto: recompile resume PDF"
-          git push
+          git diff --staged --quiet && echo "No changes" && exit 0
+          git commit -m "auto: recompile resume PDF"
+          git push origin main
