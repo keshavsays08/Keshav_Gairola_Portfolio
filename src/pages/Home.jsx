@@ -63,12 +63,13 @@ export default function Home() {
           {/* CTA */}
           <div className="flex items-center gap-4 mb-10 flex-wrap">
             <a
-              href={personal.cvPath}
-              download
+            href="/Keshav_Gairola_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
               className="px-7 py-3 bg-[#c9a96e] text-[#0d0d0d] font-mono text-sm font-bold tracking-widest uppercase rounded hover:bg-[#e8c87f] transition-colors duration-200"
             >
-              Download CV
-            </a>
+              View Resume
+            </a>             
             <button
               onClick={() => navigate("/projects")}
               className="px-7 py-3 border border-[#2a2a2a] text-[#8a8a8a] font-mono text-sm font-bold tracking-widest uppercase rounded hover:border-[#c9a96e] hover:text-[#c9a96e] transition-colors duration-200"
