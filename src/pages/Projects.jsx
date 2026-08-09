@@ -11,7 +11,7 @@ function SectionLabel({ children }) {
 }
 
 // Maps project index to image in /public/projects/
-const projectImages = ["/projects/p1.jpeg", "/projects/p2.png", "/projects/p3.png"];
+const projectImages = ["/projects/p1.jpeg", "/projects/p2.png", "/projects/p3.png","/projects/p4.png"];
 
 function ProjectCard({ project, index }) {
   return (
