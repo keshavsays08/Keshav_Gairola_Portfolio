@@ -82,6 +82,7 @@ export const experience = [
 export const projects = [
   {
     title: "Automated Insect Detection & Counting System",
+    image: "/projects/p1.jpeg",
     period: "Mar 2026 – Apr 2026",
     summary:
       "End-to-end computer vision pipeline using YOLOv8 trained on 520 annotated images, deployed on Raspberry Pi 4 for real-time fruit fly detection at 5–10 FPS with automated CSV logging.",
@@ -90,6 +91,7 @@ export const projects = [
   },
   {
     title: "Real Estate Analytics",
+    image: "/projects/p2.jpeg",
     period: "Dec 2025 – Jan 2026",
     summary:
       "End-to-end ML pipeline benchmarking 10+ algorithms, Random Forest achieving 0.91 R² via K-Fold CV. Multi-page Streamlit dashboard with Price Prediction, Analytics, Insights, and Recommender modules. Deployed on AWS EC2 + S3.",
@@ -98,6 +100,7 @@ export const projects = [
   },
   {
     title: "HR Analytics Dashboard Tableau-Project",
+    image: "/projects/p3.jpeg",
     period: "Jun 2026 – Jun 2026",
     summary:
       "This is an interactive HR dashboard built to give a quick, visual read on workforce data — hiring, demographics, and income trends — instead of digging through spreadsheets.",
@@ -106,6 +109,7 @@ export const projects = [
   },
   {
     title: "Financial Transaction Analytics PowerBI-Project",
+    image: "/projects/p4.jpeg",
     period: "Jan 2026 – Feb 2026",
     summary:
       "Star Schema data model with a central Transaction fact table and 7 dimension tables. End-to-end analytics workflow using SQL/Snowflake for data warehousing and Power BI for KPI dashboards with dynamic cross-filtering.",

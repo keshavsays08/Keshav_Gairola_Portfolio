@@ -11,24 +11,23 @@ function SectionLabel({ children }) {
 }
 
 // Maps project index to image in /public/projects/
-const projectImages = ["/projects/p1.jpeg", "/projects/p2.png", "/projects/p3.png","/projects/p4.png"];
 
-function ProjectCard({ project, index }) {
+function ProjectCard({ project}) {
   return (
     <div className="group border border-[#1f1f1f] rounded-2xl overflow-hidden hover:border-[#c9a96e]/40 transition-all duration-300 bg-[#0d0d0d] hover:bg-[#0f0f0f] flex flex-col md:flex-row">
 
-      {/* Left — project image */}
-      <div className="md:w-64 md:flex-shrink-0 h-48 md:h-auto overflow-hidden bg-[#111]">
-        <img
-          src={projectImages[index] || "/projects/p1.jpeg"}
-          alt={project.title}
-          onError={(e) => {
-            e.target.onerror = null;
-            e.target.style.display = "none";
-          }}
-          className="w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500"
-        />
-      </div>
+{/* Left — project image */}
+<div className="md:w-64 md:flex-shrink-0 h-48 md:h-auto overflow-hidden bg-[#111]">
+  <img
+    src={project.image}
+    alt={project.title}
+    onError={(e) => {
+      e.target.onerror = null;
+      e.target.style.display = "none";
+    }}
+    className="w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500"
+  />
+</div>
 
       {/* Right — content */}
       <div className="flex-1 p-7 flex flex-col gap-4">
@@ -90,7 +89,7 @@ export default function Projects() {
       </p>
       <div className="flex flex-col gap-8">
         {projects.map((p, i) => (
-          <ProjectCard key={i} project={p} index={i} />
+          <ProjectCard key={i} project={p} />
         ))}
       </div>
     </section>
