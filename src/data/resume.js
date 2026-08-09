@@ -97,13 +97,21 @@ export const projects = [
     github: "https://github.com/keshavsays08/Real-Estate-Web-Analytics-Project-Public",
   },
   {
-    title: "Financial Transaction Analytics",
+    title: "HR Analytics Dashboard Tableau-Project",
+    period: "Jun 2026 – Jun 2026",
+    summary:
+      "This is an interactive HR dashboard built to give a quick, visual read on workforce data — hiring, demographics, and income trends — instead of digging through spreadsheets.",
+    tags: ["SQL", "Tableau", "Figma", "Multi-page Dashboard"],
+    github: "https://github.com/keshavsays08/HR-Dashboard-Tableau-Project",
+  },
+  {
+    title: "Financial Transaction Analytics PowerBI-Project",
     period: "Jan 2026 – Feb 2026",
     summary:
       "Star Schema data model with a central Transaction fact table and 7 dimension tables. End-to-end analytics workflow using SQL/Snowflake for data warehousing and Power BI for KPI dashboards with dynamic cross-filtering.",
     tags: ["SQL", "Snowflake", "Power BI", "Data Warehousing"],
     github: "https://github.com/keshavsays08/Financial-Transaction-Analytics-System-Power-BI",
-  },
+  }
 ];
 
 export const skills = [

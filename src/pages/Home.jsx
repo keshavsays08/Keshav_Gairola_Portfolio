@@ -149,7 +149,7 @@ export default function Home() {
                 <span className="text-[#c9a96e] font-semibold">
                   {viewCount.toLocaleString()}
                 </span>
-                <span className="text-[#444]"> unique {viewCount === 1 ? "view" : "views"}</span>
+                <span className="text-[#444]"> Total Unique Portfolio {viewCount === 1 ? "view" : "views"}</span>
               </>
             )}
           </span>
