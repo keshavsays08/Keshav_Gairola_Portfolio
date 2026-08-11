@@ -82,7 +82,7 @@ export const experience = [
 export const projects = [
   {
     title: "Automated Insect Detection & Counting System",
-    image: "/projects/p1.png",
+    image: "/projects/p1.jpeg",
     period: "Mar 2026 – Apr 2026",
     summary:
       "End-to-end computer vision pipeline using YOLOv8 trained on 520 annotated images, deployed on Raspberry Pi 4 for real-time fruit fly detection at 5–10 FPS with automated CSV logging.",
