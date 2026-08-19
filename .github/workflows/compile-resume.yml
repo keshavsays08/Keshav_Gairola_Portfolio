@@ -34,6 +34,10 @@ jobs:
           git fetch origin main
           git rebase origin/main
           git add public/Keshav_Gairola_Resume.pdf
-          git diff --staged --quiet && echo "No changes to commit" && exit 0
-          git commit -m "auto: recompile resume PDF"
-          git push origin main
+          
+          if ! git diff --staged --quiet; then
+            git commit -m "auto: recompile resume PDF"
+            git push origin main
+          else
+            echo "No changes to commit"
+          fi
