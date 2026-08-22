@@ -23,7 +23,7 @@ jobs:
           root_file: Keshav_Gairola_Resume.tex
           working_directory: resume
           latexmk_use_xelatex: true
-          pre_compile: "tlmgr update --self && tlmgr install enumitem"
+          pre_compile: "tlmgr update --self && tlmgr install enumitem fontawesome5"
           
       - name: Copy PDF to public folder
         run: cp resume/Keshav_Gairola_Resume.pdf public/Keshav_Gairola_Resume.pdf
