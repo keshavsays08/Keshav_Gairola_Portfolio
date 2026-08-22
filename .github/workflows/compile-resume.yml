@@ -33,12 +33,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git fetch origin main
-          git rebase origin/main
+          git checkout main
           git add public/Keshav_Gairola_Resume.pdf
-          
-          if ! git diff --staged --quiet; then
-            git commit -m "auto: recompile resume PDF"
-            git push origin main
-          else
-            echo "No changes to commit"
-          fi
+          git diff --staged --quiet && echo "No changes to commit" && exit 0
+          git commit -m "auto: recompile resume PDF"
+          git push origin main
