@@ -23,7 +23,7 @@ jobs:
           root_file: Keshav_Gairola_Resume.tex
           working_directory: resume
           latexmk_use_xelatex: true
-          extra_system_packages: "enumitem"
+          pre_compile: "tlmgr update --self && tlmgr install enumitem"
           
       - name: Copy PDF to public folder
         run: cp resume/Keshav_Gairola_Resume.pdf public/Keshav_Gairola_Resume.pdf
